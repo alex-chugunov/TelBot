@@ -21,8 +21,8 @@ def get_rur(message, monetary="btc_rur", hint="в рублях"):
 
 
 def get_news(message):
-    last_rbk_post = collect()
-    bot.send_message(message.chat.id, f"Статья с РБК:\n{last_rbk_post}")
+    last_post = collect()
+    bot.send_message(message.chat.id, f"Статья с cryptonews.net:\n{last_post}")
 
 
 def test_get_data(monetary):

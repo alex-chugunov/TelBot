@@ -3,7 +3,7 @@ import sqlite3
 
 
 def record(message):
-    connect = sqlite3.connect('users.db')
+    connect = sqlite3.connect('data/users.db')
     connect.commit()
     cursor = connect.cursor()
 
